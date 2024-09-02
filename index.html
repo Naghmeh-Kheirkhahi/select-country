@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/6700fb65a7.js" crossorigin="anonymous"></script>
+        <title>Select Country</title>
+    </head>
+
+    <body>
+        <div class="main-class col-7 display-flex align-item-center space-between margin-auto">
+            <div class="title-class col-5">
+                <p>Custum</p>
+                <p>Select Menu</p>
+                <p>in JavaScript</p>
+            </div>
+
+            <div class="col-6 align-item-center">
+                <div>
+                    <form name="form1" id="form1" action="">
+                        <select name="Select Country" id="selectCountry" class="select-country-class col-12" onclick="selectCountryFunction()">
+                            <option value="Select Country" selected="selected" style="display: none;">Select Country</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="search-class col-12 display-flex" id="searchCountry" style="display: none;">
+                    <div class="search-bar-class col-12 display-flex space-between">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search" class="col-11" id="myInput"/>
+                    </div>
+
+                    <div class="country-name-class col-12" id="countryName">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- we use onchange when we want to make change in html like choose an option. we use onclick when we want to click on a button.  -->
+    </body>
+
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        .text-center {
+            text-align: center;
+        }
+    
+        .display-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .align-item-center {
+            align-items: center;
+        }
+    
+        .space-between {
+            justify-content: space-between;
+        }
+    
+        .space-around {
+            justify-content: space-around;
+        }
+    
+        .flex-column {
+            flex-direction: column;
+        }
+    
+        .margin-auto {
+            margin: auto;
+        }
+
+        .main-class {
+            border: 2px solid rgb(37, 148, 65);
+            border-radius: 7px;
+            background-color: rgb(64, 179, 93);
+            margin-top: 10%;
+            padding: 25px;
+        }
+
+        .title-class {
+            font-size: 40px; 
+            font-weight: bold;
+            color: white;
+            line-height: 50px;
+            margin: 10px;
+            padding: 20px;
+            border-left: 5px solid white;
+        }
+
+        .select-country-class {
+            padding: 10px;
+            border: 1px solid rgb(37, 148, 65);
+            border-radius: 5px;
+            font-size: medium;
+            margin: 10px;
+        }
+
+        .search-class {
+            border: 1px solid rgb(37, 148, 65);
+            border-radius: 5px;
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .search-bar-class {
+            border: 1px solid rgb(94, 94, 94);
+            border-radius: 5px;
+            background-color: white;
+            padding: 12px;
+            margin: 10px;
+        }
+    
+        .search-bar-class input {
+            font-size: medium;
+            color: rgb(94, 94, 94);
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin-left: 5px; 
+        }
+    
+        .search-bar-class i {
+           margin-right: 5px; 
+           color: rgb(94, 94, 94);
+        }
+
+        .country-name-class {
+            font-size: medium;
+            color: black;
+            line-height: 30px;
+        }
+
+        .country-name-class p{
+            padding: 5px 12px 5px 12px;
+        }
+
+        .country-name-class p:hover{
+            border: 1px solid rgb(224, 224, 224);
+            border-radius: 3px;
+            background-color: rgb(224, 224, 224);
+            cursor: pointer;
+            margin: 0 10px 0 10px;
+        }
+
+
+        .col-1 {
+            width: 8.33%;
+        }
+    
+        .col-2 {
+            width: 16.66%;
+        }
+    
+        .col-3 {
+            width: 25%;
+        }
+    
+        .col-4 {
+            width: 33.33%;
+        }
+    
+        .col-5 {
+            width: 41.66%;
+        }
+    
+        .col-6 {
+            width: 50%;
+        }
+    
+        .col-7 {
+            width: 58.33%;
+        }
+    
+        .col-8 {
+            width: 66.66%;
+        }
+    
+        .col-9 {
+            width: 75%;
+        }
+    
+        .col-10 {
+            width: 83.33%;
+        }
+    
+        .col-11 {
+            width: 91.66%;
+        }
+    
+        .col-12 {
+            width: 100%;
+        }
+    
+    </style>
+    <script src="script.js"></script>
+</html>
